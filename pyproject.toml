@@ -1,14 +1,12 @@
 [tool.poetry]
-name = "youtube-analytics-project"
+name = "youtube"
 version = "0.1.0"
 description = ""
 authors = ["Kirill Dmitruk <dmitruk.ks@mail.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-isodate = "^0.6.1"
-google-api-python-client = "^2.114.0"
+python = "^3.11"
 
 
 [build-system]
