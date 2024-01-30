@@ -9,10 +9,9 @@ KEY_API_YOUTUBE = os.getenv("KEY_API_YOUTUBE")
 class Channel:
     """Класс для ютуб-канала"""
 
-    def __init__(self, channel_id: str) -> None:
+    def __init__(self) -> None:
         """Экземпляр инициализируется id канала. Дальше все данные будут подтягиваться по API."""
 
-        self.__channel_id = channel_id
         self.make_attribute_info()
 
     def __repr__(self):

@@ -4,6 +4,7 @@ from src.channel import Channel
 class Video(Channel):
     def __init__(self, id_video):
         """Экземпляр инициализируется id канала. Дальше все данные будут подтягиваться по API."""
+        super().__init__()
         self.id_video = id_video
         self.make_attribute_info()
 
