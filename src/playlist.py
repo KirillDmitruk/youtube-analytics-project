@@ -7,7 +7,6 @@ from src.channel import Channel
 
 class PlayList(Channel):
     def __init__(self, id_playlist):
-        super().__init__()
         self.id_playlist: str = id_playlist
         self._total_duration: datetime = None
         self.make_attribute_info()

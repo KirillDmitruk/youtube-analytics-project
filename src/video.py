@@ -4,7 +4,6 @@ from src.channel import Channel
 class Video(Channel):
     def __init__(self, id_video):
         """Экземпляр инициализируется id канала. Дальше все данные будут подтягиваться по API."""
-        super().__init__()
         self.id_video = id_video
         self.make_attribute_info()
 
@@ -29,7 +28,6 @@ class Video(Channel):
 
 class PLVideo(Video):
     def __init__(self, id_video, id_play_list):
-        super().__init__(id_video)
         self.id_play_list = id_play_list
         self.id_video = id_video
         super().make_attribute_info()
